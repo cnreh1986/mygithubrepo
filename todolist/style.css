@@ -134,3 +134,43 @@ ul li span {
 ul li span:hover {
   background: #edeef0;
 }
+
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: left; /* Align text and icon to the left */
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 20px;
+  bottom: 30px;
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#toast-icon {
+  margin-right: 10px; /* Space between the icon and the message */
+}
+
+.toast .icon-success {
+  color: red; /* Color for success icon */
+}
+
+.toast .icon-error {
+  color: red; /* Color for error icon */
+}
+
+.toast .icon-info {
+  color: green; /* Color for info icon */
+}

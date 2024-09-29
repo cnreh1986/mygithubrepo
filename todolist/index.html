@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do list</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Include Font Awesome in your HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -15,12 +20,7 @@
           <button onclick="addTask()">Add</button>
         </div>
 
-        <ul id="list-container">
-          <!-- <li class="checked">Task 1</li>
-          <li>Task 2</li>
-          <li>Task 3</li>
-          <li>Task 4</li> -->
-        </ul>
+        <ul id="list-container"></ul>
       </div>
     </div>
     <!-- Pop-up Overlay -->
@@ -29,6 +29,13 @@
         <p>Add a Task to the List!</p>
         <button id="close-btn">Close</button>
       </div>
+    </div>
+    <div id="toast" class="toast">
+      <span id="toast-icon"></span>
+      <span id="toast-message"></span>
+      <span id="toast-icon" class="fas fa-check-circle"></span>
+      <!-- Message will be dynamically updated here -->
+      <span id="toast-message"></span>
     </div>
 
     <button id="show-popup-btn">Show Pop-up</button>
